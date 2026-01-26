@@ -23,6 +23,10 @@ var salesRouter = require('./routes/sales');
 var couponsRouter = require("./routes/coupons");
 
 
+const port = process.env.PORT || 8080;
+app.listen(port, () => console.log("listening on", port));
+
+
 var app = express();
 
 // view engine setup
